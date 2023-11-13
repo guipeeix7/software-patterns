@@ -1,0 +1,15 @@
+- ## Objetivos
+- "É um padrao organizacional que deixa construir objetos complexos passo a passo."
+- "Padrão que permite produzir diferentes tipos e representações de um objeto utilizadno o mesmo código de construção"
+- ![[Pasted image 20231105000749.png]]
+- ![[Pasted image 20231105005538.png]]
+
+- ## Aplicações
+	- Para evitar construtores extremamente extensos.
+		- Ex:![[Pasted image 20231105010715.png]]
+	- Per,ote construir objetos passo a passo utilizando apenas os passos que são realmente necesarios, sem a necessidade de passar parametros 1 a 1 (como acima).
+	- Interessante para Criação de objetos que se assemelham muito quando criados passo a passo se diferindo apenas nos detalhes
+	- Muito utilizado como query builder para sql
+- ## Como implementar (Principais passos)
+	- Ter certeza que é possível definir bem uma contrução comum na construção das representaçoes do produto. (Passos para criação bem definidos e próximos entre os diferentes objetos).
+	- 

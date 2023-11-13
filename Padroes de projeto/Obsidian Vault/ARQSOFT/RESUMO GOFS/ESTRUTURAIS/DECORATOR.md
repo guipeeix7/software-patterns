@@ -1,0 +1,4 @@
+- Conceito 
+	- "Reconhecido  pela criação de métodos ou construtores que aceita a mesma classe ou interface como objetos"
+	- "Deixa adicionar objets aos objetos atravé de estruturas especias que contêm esses objetos"
+- 

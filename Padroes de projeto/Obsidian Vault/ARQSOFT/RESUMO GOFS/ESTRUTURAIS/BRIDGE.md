@@ -1,0 +1,15 @@
+- ## Conceito
+	- Permite separar uma classe larga em um conjunto de classes relacinoadas, separadas por hierarquia (abstração e implementação), que podem ser desenvolvidas separadamente. 
+	- ![[Pasted image 20231110002822.png]]
+	- ![[Pasted image 20231110002834.png]]
+	- ## Exemplo: 
+		- ![[Pasted image 20231110002901.png]]
+		- ## Estrutura:
+		- ![[Pasted image 20231110002924.png]]
+		- ## Pseudocódigo
+		- ![[Pasted image 20231110003210.png]]
+	- ## Aplicações
+		- Dividir e organizar uma classe que pode decomposta em classes correlacionadas com variantes de funcionalidade. 
+		- Permite Dividir uma classe em classes de diversas hierarquias, o que simplifica a manutenção do código, minizando o risco de quebrar o mesmo. 
+		- Este padrão de projeto delega funcionalidades para subclasses ao invés de ter uma classe que resolve tudo 
+		- 

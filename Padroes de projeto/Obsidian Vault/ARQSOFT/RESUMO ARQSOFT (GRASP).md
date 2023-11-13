@@ -1,0 +1,86 @@
+- DEFINIÇÃO
+	-  "General Responsability Assignment Software Patterns"
+	-  "Padrões de Software para Atribuição de Responsabilidade Geral"
+	- Possui os seguintes componentes
+		- Creator
+		- Especialista
+		- Coesão
+		- Acoplamento
+		- Controller
+		- Polimorfismo
+		- Fabricação própria ou Invenção pura
+		- Indireção
+		- Variações Protegidas
+	
+- BASE (Antes de começar)
+	- Herança (Is A)
+		- "Também conhecida como relação parente-filho
+		- Classe filha utiliza extends
+		- Pode ser dos seguintes tipos:
+			 - TIpos:![[Pasted image 20231111114445.png]]
+				 - Single
+					 - ![[Pasted image 20231111114545.png]]
+				 - Multilevel
+					 - ![[Pasted image 20231111114558.png]]
+				 - Hierarchial
+					 - ![[Pasted image 20231111114616.png]]
+	- AGREGAÇÃO x COMPOSICAO
+	- Composição:![[Pasted image 20231102163910.png]]
+	- Agregação (Has A)![[Pasted image 20231102163948.png]]
+		- Em resumo na agregação as partes podem existir sem o objeto principal (TODO) já na composição as partes são diretamente dependentes do Objeto principal (TODO). 
+			- Ex: CPU e a GPU coexistem no computador embora sendo o computador tratado como um todo.
+			- Ex: Os braços e pernas de um cachorro não existem sem o mesmo, (podem até existir), mas o relacionamento de dependência é exorbitantemente maior. 
+		- Exemplo:
+			- ![[Pasted image 20231111114804.png]]
+	 - COESÃO (Definição):
+		 - **Coesão alta**:  Classe tem peso leve e responsabilidades exclusivas em algumas áreas logicamente relacionadas ao conceito da classe, mas não uma com as outras.
+		 - **Coesão baixa**:  Uma classe é responável por muitas coisas em áreas funcionais muito diferentes. 
+	 - Acoplamento (Definição):
+		 - Baixa dependência entre classes visando o baixo impacto de modificações e o aumento da reutilização. 
+		 - Classes se tornam mais independentes (Baixo acoplamento)
+		 - O Acoplamento pode ocorrer quando:
+			 - Um atributo de uma classe X é uma referência a um objeto de outra classe Y
+			 - Um objeto de uma classe X invoca métodos de um objeto de uma classe Y
+			 - Um método de uma classe X referencia um objeto da classe Y ou propria classe Y
+			 - X é uma subclasse direta ou indireta de Y 
+			 - Y é uma interface e X implementa essa interface
+	- COESÃO X ACOPLAMENTO
+		-  Em um projeto é altamente interessante buscar Alta coesão (Classes bem divididas com o menor responsabilidade possível) e Baixo acoplamento (Com menor dependência entre classes possível).
+		- 
+	- METODOS ESTÁTICOS
+		- Utilizados quando o método pode ser usado por outras classes, sem a necessidade de instanciar ou utilizar diretamente um atributo da classe instanciada dentro do método. 
+	- IMPLEMENTS X EXTENDS
+		- Extends está diretamente ligado a hearança, enquanto Implements é uma abstração
+		- Implements define a nível abstrato como uma classe será implementada 
+		- ![[Pasted image 20231111115449.png]]
+- CREATOR
+	- Pode se dizer que é: "A entidade responsável por criar a instância propria ou de 'subclasses'"
+	- ![[Pasted image 20231102163435.png]]
+
+
+- ESPECIALISTA
+	- "Criador é um especialista na criação de instâncias"
+	- "Procupa em delegar as responsabilidades para a entidade mais especialista naquele assunto"
+	- Ex1: ![[Pasted image 20231102165554.png]]
+	- Conjunto de Exemplos 2
+	- Sem aplicação do GRASP
+	- ![[Pasted image 20231102165737.png]]
+	- Aplicando GRASP 1
+	- ![[Pasted image 20231102165839.png]]
+	- ![[Pasted image 20231102165851.png]]
+	- ![[Pasted image 20231102165933.png]]
+- CONTROLADORES
+	- ?? São as famosas controllers "?"
+	- Definem a lógica do sistema por baixo dos panos
+- POLIMORFISMO (Definição)
+	- "É um tipo de operação"
+	- "Is the ability of an object to take on many forms"
+	- "Implica no uso de classes abstratas ou interfaces em linguages OO"
+	- Polimorfismo X Agregação
+	- Exemplo onde um método de uma subclasse é sobreescrito![[Pasted image 20231103132638.png]]
+	- Exemplo em código
+	- ![[Pasted image 20231103133112.png]]
+	- ![[Pasted image 20231103132931.png]]
+	- Ex 2:![[Pasted image 20231103135111.png]]
+- INVENÇÃO PURA
+	- 

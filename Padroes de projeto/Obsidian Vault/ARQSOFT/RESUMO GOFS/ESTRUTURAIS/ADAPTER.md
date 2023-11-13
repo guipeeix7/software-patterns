@@ -1,0 +1,15 @@
+- ## Definição 
+	- É um design pattern que permite objetos de interfaces incompatíveis de trabalharem juntos,
+	- Traduto
+	- ![[Pasted image 20231105184426.png]]
+- ## Estrutura:
+	- ![[Pasted image 20231108011132.png]]
+- PseudoCode:
+- ![[Pasted image 20231108011415.png]]
+- ## Aplicações
+	- Usar quando queremos trabalhar com uma classe ou API mas a mesma é incompatível com o resto do código 
+- Como implementar
+	- Ter 2 classes com interfaces incompativeis
+	- Declarar a interface de cliente e descrever como os clientes irão se comunicar com essa classe 
+	- Implementar métodos que são utilizados no cliente no adpatador um a um
+	- Os clientes devem usar o adaptador através da interface do cliente, o que permitirá alterar o adaptador sem interferir com o cliente.
