@@ -1,0 +1,4 @@
+method businessLogic() is
+    Array shapesCopy = new Array of Shapes.
+    foreach (s in shapes) do
+        shapesCopy.add(s.clone())
